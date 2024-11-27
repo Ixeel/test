@@ -12,6 +12,9 @@ public class Main {
 
         //Task 3
         revertArr(arr);
+
+        //Task 4
+        checkIfNumIsPresent(arr, 2);
     }
 
 
@@ -34,6 +37,14 @@ public class Main {
         System.out.print("Масив в зворотньому порядку: ");
         for (int i = numbers.length - 1; i >= 0; i--) {
             System.out.print(numbers[i] + " ");
+        }
+    }
+
+    public static void checkIfNumIsPresent(int[] numbers, int find_number) {
+        if (Arrays.binarySearch(numbers, find_number) >= 0) {
+            System.out.println("\nЧисло " + find_number + " присутнє в масиві " + Arrays.toString(numbers));
+        } else {
+            System.out.println("\nЧисло " + find_number + " не присутнє в масиві " + Arrays.toString(numbers));
         }
     }
 
