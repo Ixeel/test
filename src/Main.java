@@ -9,6 +9,9 @@ public class Main {
 
         //Task 2
         minAndMax(arr);
+
+        //Task 3
+        revertArr(arr);
     }
 
 
@@ -27,7 +30,12 @@ public class Main {
         int min = numbers[0];
         System.out.println("min = " + min + " max = " + max);
     }
-
+    public static void revertArr(int[] numbers) {
+        System.out.print("Масив в зворотньому порядку: ");
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
 
 }
 
